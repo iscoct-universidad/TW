@@ -31,24 +31,30 @@
 
         <!-- Bloque principal de la página -->
 
-        <section>
+        <main>
             <section>
-                <img src="imagen.jpg" alt="Imagen del pedido"/>
 
+                <!-- Mucho ojo con esta cabecera -->
+                <!-- Echarle el ojo porque no está terminada -->
+
+                <header>
+                    <img src="imagen.jpg" alt="Imagen del pedido"/>
+
+                </header>
                 <p>Texto más o menos extenso</p>
 
-                <form>
+                <form action="./procesar.php">
                     <fieldset>
                         Precio x euros <br/>
-                        Nombre y apellidos <input type="text"/>
-                        Dirección <textarea rows="5" cols="20">Introduzca su dirección por favor</textarea><br/>
-                        EMail <input type="text"/>
-                        Número de tarjeta <input type="text"/>
-                        Fecha de caducidad <input type="date"/>    CVC <input type="text"/>
-                        Marque si procede   <input type="checkbox"/> He leído y acepto las condiciones de compra
-                                            <input type="checkbox"/> Deseo recibir información sobre novedades
-                                            <input type="checkbox"/> Dseo el envío envuelto para regalo
-                        <input type="submit"/>
+                        Nombre y apellidos <input type="text" name="nombreApellidos"/>
+                        Dirección <textarea rows="5" cols="20" name="direccion">Introduzca su dirección por favor</textarea><br/>
+                        EMail <input type="text" name="email"/>
+                        Número de tarjeta <input type="text" name="numTarjeta"/>
+                        Fecha de caducidad <input type="date" name="caducidad"/>    CVC <input type="text" name="cvc"/>
+                        Marque si procede   <input type="checkbox" name="leidoAceptado"/> He leído y acepto las condiciones de compra
+                                            <input type="checkbox" name="recibirInformacion"/> Deseo recibir información sobre novedades
+                                            <input type="checkbox" name="envuelto"/> Dseo el envío envuelto para regalo
+                        <input type="submit" value="Hacer pedido"/>
                     </fieldset>
                 </form>
             </section>
@@ -77,7 +83,7 @@
                 </ul>
 
             </aside>
-        </section>
+        </main>
 
         <!-- Pie de la página -->
 
