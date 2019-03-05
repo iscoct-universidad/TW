@@ -35,21 +35,21 @@
             <section>
                 <form action="./procesar.php">
                     <fieldset>
-                        Autor <input type="text"/><br/>
-                        Título <input type="text"/><br/>
-                        ISBN <input type="text"/><br/>
-                        Precio  entre <input type="text"/>  y <input type="text"/><br/>
-                        Género  <select id="genero">
-                            <option value="Acción">Acción</option>
-                            <option value="Ciencia Ficción">Ciencia Ficción</option>
-                            <option value="Thriller">Thriller</option>
-                            <option value="Comedia">Comedia</option>
+                        Autor <input type="text" name="autor"/><br/>
+                        Título <input type="text" name="titulo"/><br/>
+                        ISBN <input type="text" name="isbn"/><br/>
+                        Precio  entre <input type="text" name="precioMinimo"/>  y <input type="text" name="precioMaximo"/><br/>
+                        Género  <select id="genero" name="genero">
+                            <option value="accion">Acción</option>
+                            <option value="cienciaFiccion">Ciencia Ficción</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="tomedia">Comedia</option>
                             <option value="autoayuda">Autoayuda</option>
                         </select><br/>
-                        Encuadernación  <input type="radio" value="tapaDura"/>Tapa dura<br/>
-                                        <input type="radio" value="tapaBlanda"/>Tapa blanda<br/>
-                                        <input type="radio" value="cualquiera" checked/>Cualquiera<br/>
-                                        <input type="submit" value="Buscar" name="encuadernacion"/>
+                        Encuadernación  <input type="radio" name="encuadernacion"/>Tapa dura<br/>
+                                        <input type="radio" name="encuadernacion"/>Tapa blanda<br/>
+                                        <input type="radio" name="encuadernacion" value="cualquiera" checked/>Cualquiera<br/>
+                                        <input type="submit" value="Buscar"/>
                     </fieldset>
                 </form>
             </section>
