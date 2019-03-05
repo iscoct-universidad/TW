@@ -34,36 +34,32 @@
         <main>
             <section>
 
-                <!-- Evento número 1 -->
+                <!-- Mucho ojo con esta cabecera -->
+                <!-- Echarle el ojo porque no está terminada -->
 
-                <div>
-                    <img src="evento1.jpg" alt="Foto sobre el evento 1"/>
-                    <h2>Firma de libros de Carlos Ruiz Zafón</h2>
-                    <h3>15-3-2019 a las 6:00 pm</h3>
-                    <p>Viene Carlos Ruiz Zafón a firmar el libro La Sombra Del Viento</p>
-                </div>
+                <header>
+                    <img src="imagen.jpg" alt="Imagen del pedido"/>
 
-                <!-- Evento número 2 -->
+                </header>
+                <p>Texto más o menos extenso</p>
 
-                <div>
-                    <img src="evento2.jpg" alt="Foto sobre el evento 2"/>
-                    <h2>Presentación del libro de Laura Gallego</h2>
-                    <h3>2-10-2019</h3>
-                    <p>Laura anunciará un nuevo libro en nuestra librería para esa fecha y hora</p>
-                </div>
-
-                <!-- Evento número 3 -->
-
-                <div>
-                    <img src="evento2.jpg" alt="Foto sobre el evento 2"/>
-                    <h2>Lectura grupal</h2>
-                    <h3>6-3-2019</h3>
-                    <p>Esta semana le toca leer a Francisco José Cotán López</p>
-                </div>
+                <form action="./procesar.php">
+                    <fieldset>
+                        Precio x euros <br/>
+                        Nombre y apellidos <input type="text" name="nombreApellidos"/>
+                        Dirección <textarea rows="5" cols="20" name="direccion">Introduzca su dirección por favor</textarea><br/>
+                        EMail <input type="text" name="email"/>
+                        Número de tarjeta <input type="text" name="numTarjeta"/>
+                        Fecha de caducidad <input type="date" name="caducidad"/>    CVC <input type="text" name="cvc"/>
+                        Marque si procede   <input type="checkbox" name="leidoAceptado"/> He leído y acepto las condiciones de compra
+                                            <input type="checkbox" name="recibirInformacion"/> Deseo recibir información sobre novedades
+                                            <input type="checkbox" name="envuelto"/> Dseo el envío envuelto para regalo
+                        <input type="submit" value="Hacer pedido"/>
+                    </fieldset>
+                </form>
             </section>
 
             <!-- Barra de al lado -->
-
             <aside>
 
                 <h2>
@@ -128,10 +124,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="https://www.w3schools.com/"/>La empresa</a></li>
-                    <li><a href="https://www.w3schools.com/"/>Política de envío</a></li>
-                    <li><a href="https://www.w3schools.com/"/>Preguntas frecuentes</a></li>
-                    <li><a href="https://www.w3schools.com/"/>Mapa del sitio</a></li>
+                    <li>La empresa</li>
+                    <li>Política de envío</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Mapa del sitio</li>
                 </ul>
             </nav>
         </footer>

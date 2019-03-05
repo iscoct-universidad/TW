@@ -34,32 +34,70 @@
         <main>
             <section>
 
-                <!-- Evento número 1 -->
+                <!-- Lista de libros -->
 
-                <div>
-                    <img src="evento1.jpg" alt="Foto sobre el evento 1"/>
-                    <h2>Firma de libros de Carlos Ruiz Zafón</h2>
-                    <h3>15-3-2019 a las 6:00 pm</h3>
-                    <p>Viene Carlos Ruiz Zafón a firmar el libro La Sombra Del Viento</p>
-                </div>
+                <ul>
+                    <!-- Libro número 1 -->
 
-                <!-- Evento número 2 -->
+                    <li>
+                        <div>
+                            <img src="libro1.jpg" alt="Foto sobre el libro 1"/>
+                            <h2>Preludio</h2>
+                            <h3>Ruiz Mantilla Jesús</h3>
+                            <h3>Galana Gutenberg</h3>
+                            <form><input type="submit" value="Comprar"/></form>
+                        </div>
+                    </li>
 
-                <div>
-                    <img src="evento2.jpg" alt="Foto sobre el evento 2"/>
-                    <h2>Presentación del libro de Laura Gallego</h2>
-                    <h3>2-10-2019</h3>
-                    <p>Laura anunciará un nuevo libro en nuestra librería para esa fecha y hora</p>
-                </div>
+                    <!-- Libro número 2 -->
 
-                <!-- Evento número 3 -->
+                    <li>
+                        <div>
+                            <img src="libro2.jpg" alt="Foto sobre el libro 2"/>
+                            <h2>Viejo y la pistola el</h2>
+                            <h3>Grann David</h3>
+                            <h3>Mondadori España</h3>
+                            <form><input type="submit" value="Comprar"/></form>
+                        </div>
+                    </li>
 
-                <div>
-                    <img src="evento2.jpg" alt="Foto sobre el evento 2"/>
-                    <h2>Lectura grupal</h2>
-                    <h3>6-3-2019</h3>
-                    <p>Esta semana le toca leer a Francisco José Cotán López</p>
-                </div>
+                    <!-- Libro número 3 -->
+
+                    <li>
+                        <div>
+                            <img src="libro3.jpg" alt="Foto sobre el libro 3"/>
+                            <h2>Quien no</h2>
+                            <h3>Piñero Claudia</h3>
+                            <h3>Alfaguaña</h3>
+                            <form><input type="submit" value="Comprar"/></form>
+                        </div>
+                    </li>
+
+                    <!-- Libro número 4 -->
+
+                    <li>
+                        <div>
+                            <img src="libro4.jpg" alt="Foto sobre el libro 4"/>
+                            <h2>Juventud sin dios</h2>
+                            <h3>Horvath Odon Von</h3>
+                            <h3>Nordica Libros SL</h3>
+                            <form><input type="submit" value="Comprar"/></form>
+                        </div>
+                    </li>
+
+                    <!-- Libro número 5 -->
+
+                    <li>
+                        <div>
+                            <img src="libro5.jpg" alt="Foto sobre el libro 5"/>
+                            <h2>Corazón que ríe corazón que llora</h2>
+                            <h3>Conde Marise</h3>
+                            <h3>Impedimenta Ediciones</h3>
+                            <form><input type="submit" value="Comprar"/></form>
+                        </div>
+                    </li>
+                </ul>
+
             </section>
 
             <!-- Barra de al lado -->
@@ -128,10 +166,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="https://www.w3schools.com/"/>La empresa</a></li>
-                    <li><a href="https://www.w3schools.com/"/>Política de envío</a></li>
-                    <li><a href="https://www.w3schools.com/"/>Preguntas frecuentes</a></li>
-                    <li><a href="https://www.w3schools.com/"/>Mapa del sitio</a></li>
+                    <li>La empresa</li>
+                    <li>Política de envío</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Mapa del sitio</li>
                 </ul>
             </nav>
         </footer>

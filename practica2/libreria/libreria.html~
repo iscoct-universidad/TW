@@ -32,38 +32,14 @@
         <!-- Bloque principal de la página -->
 
         <main>
+            
+            <!-- Bloque de los contenidos que se tendrán -->
+
             <section>
-
-                <!-- Evento número 1 -->
-
-                <div>
-                    <img src="evento1.jpg" alt="Foto sobre el evento 1"/>
-                    <h2>Firma de libros de Carlos Ruiz Zafón</h2>
-                    <h3>15-3-2019 a las 6:00 pm</h3>
-                    <p>Viene Carlos Ruiz Zafón a firmar el libro La Sombra Del Viento</p>
-                </div>
-
-                <!-- Evento número 2 -->
-
-                <div>
-                    <img src="evento2.jpg" alt="Foto sobre el evento 2"/>
-                    <h2>Presentación del libro de Laura Gallego</h2>
-                    <h3>2-10-2019</h3>
-                    <p>Laura anunciará un nuevo libro en nuestra librería para esa fecha y hora</p>
-                </div>
-
-                <!-- Evento número 3 -->
-
-                <div>
-                    <img src="evento2.jpg" alt="Foto sobre el evento 2"/>
-                    <h2>Lectura grupal</h2>
-                    <h3>6-3-2019</h3>
-                    <p>Esta semana le toca leer a Francisco José Cotán López</p>
-                </div>
+                (contenidos)
             </section>
 
             <!-- Barra de al lado -->
-
             <aside>
 
                 <h2>
@@ -128,10 +104,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="https://www.w3schools.com/"/>La empresa</a></li>
-                    <li><a href="https://www.w3schools.com/"/>Política de envío</a></li>
-                    <li><a href="https://www.w3schools.com/"/>Preguntas frecuentes</a></li>
-                    <li><a href="https://www.w3schools.com/"/>Mapa del sitio</a></li>
+                    <li>La empresa</li>
+                    <li>Política de envío</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Mapa del sitio</li>
                 </ul>
             </nav>
         </footer>
