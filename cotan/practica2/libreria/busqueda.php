@@ -48,9 +48,9 @@
                             <option value="tomedia">Comedia</option>
                             <option value="autoayuda">Autoayuda</option>
                         </select><br/>
-                        Encuadernación  <input type="radio" name="encuadernacion" value="dura"/>Tapa dura<br/>
-                                        <input type="radio" name="encuadernacion" value="blanda"/>Tapa blanda<br/>
-                                        <input type="radio" name="encuadernacion" value="cualquiera" checked/>Cualquiera<br/>
+                        Encuadernación  <input type="radio" name="encuadernacion" value="dura"/><label for="dura">Tapa dura</label><br/>
+                                        <input type="radio" name="encuadernacion" value="blanda"/><label for="blanda">Tapa blanda</label><br/>
+                                        <input type="radio" name="encuadernacion" value="cualquiera" checked/><label for="cualquiera">Cualquiera</label><br/>
                                         <input type="submit" value="Buscar"/>
                     </fieldset>
                 </form>

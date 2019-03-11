@@ -72,10 +72,10 @@
                         Dirección <textarea rows="5" cols="20" name="direccion">Introduzca su dirección por favor</textarea><br/>
                         EMail <input type="text" name="email"/>
                         Número de tarjeta <input type="text" name="numTarjeta"/>
-                        Fecha de caducidad <input type="date" name="caducidad"/>    CVC <input type="text" name="cvc"/>
-                        Marque si procede   <input type="checkbox" name="leidoAceptado" value="condiciones"/> He leído y acepto las condiciones de compra
-                                            <input type="checkbox" name="recibirInformacion" value="recibirInformacion"/> Deseo recibir información sobre novedades
-                                            <input type="checkbox" name="envuelto" value="envuelto"/> Deseo el envío envuelto para regalo
+                        Fecha de caducidad <input type="date" name="caducidad"/>    CVC <input type="text" name="cvc" id="cvc"/>
+                        Marque si procede   <input type="checkbox" name="leidoAceptado" value="condiciones"/> <label for="condiciones">He leído y acepto las condiciones de compra</label>
+                                            <input type="checkbox" name="recibirInformacion" value="recibirInfo"/> <label for="recibirInfo">Deseo recibir información sobre novedades</label>
+                                            <input type="checkbox" name="envuelto" value="envuelto"/> <label for="envuelto">Deseo el envío envuelto para regalo</label>
                         <input type="submit" value="Hacer pedido"/>
                     </fieldset>
                 </form>
