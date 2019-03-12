@@ -24,7 +24,7 @@
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./catalogo.html">Catálogo</a></li>
-                <li><a href="./busqueda.html">Búsqueda</li>
+                <li><a href="./busqueda.php">Búsqueda</li>
                 <li><a href="./tienda.html">Tiendas</a></li>
                 <li><a href="./pedidos.php">Pedidos</a></li>
             </ul>
