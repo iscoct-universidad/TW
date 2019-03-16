@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(157, 157, 182);
+}
+
+header {
+    background-color: darksalmon;
+}
+
+header h1 {
+    text-align: center;
+    color: brown;
+}
+
+#navegacionTop {
+    background-color: chocolate;
+    border: 40px;
+    border-style: solid;
+    border-color: brown;
+}
+
+#navegacionTop ul {
+    list-style-type: none;
+    color: white;
+}
+
+.enlacesTop:hover {
+    background-color: darksalmon;
+    color: chocolate;
+}
+
+.enlacesTop {
+    color: white;
+    text-decoration: none;
+}
+
+#ingredientes {
+    margin: 0px;
+}
+
+#ingredientes h2 {
+    color: white;
+    background-color: rgb(117, 68, 163);
+}
+
+#ingredientes ul {
+    background-color: rgb(174, 156, 190);
+}
+
+#ingredientes ul li span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#elaboracion {
+    background-color: yellow;
+    margin: 2%;
+}
+
+#elaboracion h2 {
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    background-color: rgb(243, 243, 204);
+}
+
+.pasos h3 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(243, 243, 204);
+}
+
+.pasos {
+    background-color: coral;
+    margin: 50px;
+}
+
+footer p {
+    text-align: center;
+}

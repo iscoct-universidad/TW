@@ -1,0 +1,14 @@
+#conjuntoEventos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#bloqueCentral {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.imagenCentral {
+    width: 200px;
+    height: 200px;
+}

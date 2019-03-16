@@ -1,0 +1,45 @@
+
+
+#conjuntoEventos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#bloqueCentral {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.imagenCentral {
+    width: 200px;
+    height: 200px;
+}
+
+#pie {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: coral;
+}
+
+#contacto ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+#redesSociales ul {
+    list-style-type: none;
+}
+
+.navImagenes {
+    float: left;
+    width: 20%;
+}
+
+#navPie ul {
+    list-style-type: none;
+}
+
+#navPie ul li a {
+    text-decoration: none;
+    color: white;
+}

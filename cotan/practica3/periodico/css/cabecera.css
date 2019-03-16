@@ -1,0 +1,33 @@
+#navegacionTop {
+    width: 100%;
+    overflow: auto;
+    margin: 20px;
+    background-color: darkgray;
+}
+
+#navegacionTop ul {
+    list-style-type: none;
+}
+
+.enlaceTop {
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+
+.enlaceTop:link {
+    color: white;
+}
+
+.enlaceTop:visited {
+    color: white;
+}
+
+.enlaceTop:hover {
+    color: aqua;
+}
+
+#eslogan {
+    text-align: center;
+}
