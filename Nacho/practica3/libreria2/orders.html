@@ -17,41 +17,41 @@
         </div>      
       </header>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="catalogue.html">Catálogo</a></li>
-          <li><a href="search.html">Búsqueda</a></li>
-          <li><a href="stores.html">Tiendas</a></li>
-          <li><a href="">Pedidos</a></li>
-        </ul>
+      <nav> <!-- Menú de navegación -->                
+        <a href="index.html">Inicio</a>
+        <a href="catalogue.html">Catálogo</a>
+        <a href="search.html">Búsqueda</a>
+        <a href="stores.html">Tiendas</a>
+        <a href="orders.html">Pedidos</a>                
       </nav>
 
-      <main>
-        <div id="info-libro">
-          <img src="./img/libros/1984.jpeg" alt="Carátula del libro" height="150">                
-          <ul id="datos-pedido">
-            <li>
-              <h4>Título</h4>
-              <p>El título del libro</p>
-            </li>
-            <li>
-              <h4>Autor</h4>
-              <p>Menganito y Fulanito</p>
-            </li>
-            <li>
-              <h4>ISBN</h4>
-              <p>xxx-xxx-xxx</p>
-            </li>
-            <li>
-              <h4>Editorial</h4>
-              <p>UnaCualquiera.SL</p>
-            </li>
-            <li>
-              <h4>Año</h4>
-              <p>2019</p>
-            </li>
-          </ul>     
+      <main id="orders">
+        <div id="info-pedido">
+          <div id="datos-libro">
+              <img src="./img/libros/1984.jpeg" alt="Carátula del libro">                
+              <ul id="datos-pedido">
+                <li>
+                  <h4 class="categoria">Título</h4>
+                  <p class="valor">El título del libro</p>
+                </li>
+                <li>
+                  <h4 class="categoria">Autor</h4>
+                  <p class="valor">Menganito y Fulanito</p>
+                </li>
+                <li>
+                  <h4 class="categoria">ISBN</h4>
+                  <p class="valor">xxx-xxx-xxx</p>
+                </li>
+                <li>
+                  <h4 class="categoria">Editorial</h4>
+                  <p class="valor">UnaCualquiera.SL</p>
+                </li>
+                <li>
+                  <h4 class="categoria">Año</h4>
+                  <p class="valor">2019</p>
+                </li>
+              </ul>     
+          </div>          
 
           <p id="descripcion-pedido">
             En el año 1984 Londres es una ciudad lúgubre en la que la Policía del 
@@ -61,10 +61,10 @@
             la versión oficial de los hechos. Hasta que decide replantearse la 
             verdad del sistema que los gobierna y somete
           </p>
-          <p id="precio-pedido">
+          <div id="precio-pedido">
             <h4>PRECIO</h4>
             <p>6€</p>
-          </p>
+          </div>
         </div>
 
         <form action="procesar.php" method="POST">
