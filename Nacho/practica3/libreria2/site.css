@@ -157,6 +157,35 @@ footer {
   
 }
 
+/* Formularios */
+
+form {
+  display: flex;
+  flex-direction: column;  
+  margin: auto auto;
+}
+
+label {
+  margin: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+}
+
+label>input {
+  margin: 0 0;
+}
+
+label>p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 4;
+  width: 25%;
+}
+
+input[type=text], select, textarea, input[type="email"] {
+  width: 100%;
+}
+
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
 /* index.html */
@@ -206,8 +235,7 @@ footer {
 
 #info-pedido {
   display: flex;
-  flex-direction: column;
-  /* flex-wrap: nowrap; */
+  flex-direction: column; 
 }
 
 #datos-libro {
@@ -221,12 +249,16 @@ footer {
   max-height: 150px;
 }
 
+#datos-pedido {
+  width: 100%;
+}
+
 #datos-pedido>li{
   display: flex;
 }
 
 #datos-pedido h4 {
-  width: 50%;
+  width: 25%;
 }
 
 #datos-pedido p {
@@ -241,6 +273,7 @@ footer {
 .valor {
   margin: 5px;
   color: green;
+  white-space: nowrap;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -286,6 +319,15 @@ button:hover, input[type=submit]:hover {
   color: white;
 }
 
+/* Formulario */
+
+#form-orders {  
+  margin-left: 0;
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
 /* stores.html */
@@ -318,33 +360,6 @@ button:hover, input[type=submit]:hover {
 /* ----------------------------------------------- */
 /* search.html */
 
-form {
-  display: flex;
-  flex-direction: column;  
-  margin: auto auto;
-}
-
-label {
-  margin: 10;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  display: flex;
-}
-
-label>input {
-  margin: 0 0;
-}
-
-label>p {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 4;
-  width: 25%;
-}
-
-input[type=text], select{
-  width: 100%;
-}
-
 select {
   text-align: center;
   text-align-last: center;
@@ -376,20 +391,19 @@ select {
   margin-right: 10;
 }
 
-#radio {
+.radio {
   /* text-align: right; */
   display: flex;
 }
 
-#radio-options {
+.radio-options {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 15px;
 }
 
-#radio-options>label {
-  /* text-align: right; */
+.radio-options>label {
   flex-direction: row;
 }
 

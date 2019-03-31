@@ -68,23 +68,39 @@
         </div>
 
         <form id="form-orders" action="procesar.php" method="POST">
-            <label>Nombre y apellidos<input type="text" name="nombre"/></label>
-            <label>Dirección de envío<textarea name="direccion"></textarea></label>
-            <label>Email<input type="email" name="email"/></label>
-            <label>Número de tarjeta<input type="text" name="tarjeta"/></label>
-            <label>Fecha de caducidad<input type="text" name="caducidad"/></label>
-            <label>CVC<input type="text" name="cvc"/></label>          
-            
-            <p>Marque si procede</p>
-            <label><input type="checkbox" name="condiciones" value="condiciones"/>
-              He leído y acepto las condiciones de compra
+            <label><p>Nombre y apellidos</p>
+              <input type="text" name="nombre"/>
             </label>
-            <label><input type="checkbox" name="maillist" value="maillist"/>
-              Deseo recibir información sobre novedades
+            <label><p>Dirección de envío</p>
+              <textarea name="direccion"></textarea>
             </label>
-            <label><input type="checkbox" name="regalo" value="regalo"/>
-              Deseo el envío envuelto para regalo
-            </label>            
+            <label><p>Email</p>
+              <input type="email" name="email"/>
+            </label>
+            <label><p>Número de tarjeta</p>
+              <input type="text" name="tarjeta"/>
+            </label>
+            <label><p>Fecha de caducidad</p>
+              <input type="text" name="caducidad"/>
+            </label>
+            <label><p>CVC</p>
+              <input type="text" name="cvc"/>
+            </label>          
+
+            <div class="radio">
+              <p class="form-subtitle">Marque si procede</p>
+              <div class="radio-options">
+                <label><input type="checkbox" name="condiciones" value="condiciones"/>
+                  <p class="radio-text">He leído y acepto las condiciones de compra</p>
+                </label>
+                <label><input type="checkbox" name="maillist" value="maillist"/>
+                  <p class="radio-text">Deseo recibir información sobre novedades</p>
+                </label>
+                <label><input type="checkbox" name="regalo" value="regalo"/>
+                  <p class="radio-text">Deseo el envío envuelto para regalo</p>
+                </label>            
+              </div>
+            </div>
     
             <input type="submit" value="Hacer pedido"/>
           </form>
