@@ -260,7 +260,7 @@ footer {
   list-style-type: none;
 }
 
-button {
+button, input[type=submit] {
   font-weight: bold;    
   background-color: rgba(58, 161, 58, 0.705);  
   font-size: 15px;
@@ -273,7 +273,7 @@ button {
   text-align: center;
 }
 
-button:hover {
+button:hover, input[type=submit]:hover {
   background-color: goldenrod;
   color: white;
 }
@@ -309,3 +309,83 @@ button:hover {
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
 /* search.html */
+
+form {
+  display: flex;
+  flex-direction: column;  
+  margin: auto auto;
+}
+
+label {
+  margin: 10;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+}
+
+label>input {
+  margin: 0 0;
+}
+
+label>p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 4;
+  width: 25%;
+}
+
+input[type=text], select{
+  width: 100%;
+}
+
+select {
+  text-align: center;
+  text-align-last: center;
+}
+
+.form-subtitle {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#precio>label {
+  margin-top: 0;
+  margin-bottom: 0;    
+}
+
+#precio {
+  margin-right: 0;
+}
+
+#precio>p {
+  height: 50%;
+  margin-right: 0;
+}
+
+.form-subtitle {
+  width: 25%;
+  margin-right: 10;
+}
+
+#radio {
+  /* text-align: right; */
+  display: flex;
+}
+
+#radio-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#radio-options>label {
+  /* text-align: right; */
+  flex-direction: row;
+}
+
+.radio-text {
+  margin-left: 10px;
+  white-space: nowrap;  
+}

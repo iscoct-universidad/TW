@@ -26,23 +26,31 @@
       </nav>
 
       <main id="search">
-        <form action="procesar.php" method="GET">
-          <label>Autor<input type="text" name="autor"/></label>
-          <label>Título<input type="text" name="titulo"/></label>
-          <label>ISBN<input type="text" name="isbn"/></label>
+        <form id="form-search" action="procesar.php" method="GET">
+          <label><p>Autor</p>
+            <input type="text" name="autor"/>
+          </label>
+          <label><p>Título</p>
+            <input type="text" name="titulo"/>
+          </label>
+          <label><p>ISBN</p>
+            <input type="text" name="isbn"/>
+          </label>
 
-          <label>
-            Precio
+          <label id="precio">
+            <p>Precio</p>
             <label>
-              entre <input type="number" name="minPrecio"/>
+                <p>entre</p>
+              <input type="number" name="minPrecio"/>
             </label>
             <label>
-              y <input type="number" name="maxPrecio"/>
+              <p>y</p>
+              <input type="number" name="maxPrecio"/>
             </label>          
           </label>
           
           <label>
-            Género
+            <p>Género</p>
             <select name="genero">
               <option value="" disabled selected>- Elija el género -</option>        
               <option value="fantastica">Fantástica</option>
@@ -52,12 +60,24 @@
               <option value="terror">Terror</option>
             </select>
           </label>        
-
-          <p>Encuadernación</p>
-          <label><input type="radio" name="encuadernacion" value="dura"/>Tapa dura</label>
-          <label><input type="radio" name="encuadernacion" value="blanda"/>Tapa blanda</label>
-          <label><input type="radio" name="encuadernacion" value="cualquiera"/>Cualquiera</label>        
-
+          
+          <div id="radio">
+            <p class="form-subtitle">Encuadernación</p>
+            <div id="radio-options">
+              <label>
+                <input type="radio" name="encuadernacion" value="dura"/>
+                <p class="radio-text">Tapa dura</p>
+              </label>
+              <label>
+                <input type="radio" name="encuadernacion" value="blanda"/>
+                <p class="radio-text">Tapa blanda</p>
+              </label>
+              <label>
+                <input type="radio" name="encuadernacion" value="cualquiera"/>
+                <p class="radio-text">Cualquiera</p>
+              </label>        
+            </div>
+          </div>
           <input type="submit" value="Buscar"/>
         </form>
       </main>
