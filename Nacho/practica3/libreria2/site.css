@@ -225,6 +225,14 @@ footer {
   display: flex;
 }
 
+#datos-pedido h4 {
+  width: 50%;
+}
+
+#datos-pedido p {
+  width: 100%; 
+}
+
 .categoria {
   margin: 5px 10px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
