@@ -44,17 +44,31 @@ header {
   grid-area: header;
   background-color: rgba(255, 255, 255);
   display: flex;
+  /* margin: auto; */
 }
 
 /* Habrá que ponerle id - O NO */
 header > img { 
-  /* flex-basis: 10px;      */
-  /* flex-grow: 1; */
+  margin-left: 30%;
+  /* margin: auto; */
 }
 
-header > .nombre_eslogan { 
-  /* flex-basis: 10px;    */
-  /* flex-grow: 1; */
+#nombre_eslogan {   
+  margin-left: auto;
+  margin-right: 30%;
+  /* margin: auto; */
+}
+
+#nombre_eslogan>h1 {
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+  margin-bottom: 0;
+}
+
+#nombre_eslogan>p {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 0;
 }
 
 /* ----------------------------------------------- */
@@ -100,14 +114,28 @@ aside {
 }
 
 .recomendaciones {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 5%;
+  margin: auto;
+  width: 75%;
+  word-wrap: nowrap;  
+  text-align: center;  
+}
+
+.recomendaciones>h4 {
+  font-size: 23px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  margin: auto;
 }
 
 .recomendaciones>ul {
   list-style-type: none;
   padding: 0;
+}
+
+.recomendaciones>ul>li {
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #mas-vendidos {
@@ -157,6 +185,8 @@ footer {
   
 }
 
+/* ----------------------------------------------- */
+
 /* Formularios */
 
 form {
@@ -192,31 +222,40 @@ input[type=text], select, textarea, input[type="email"] {
 
 #indx {
   background-color: white;
-  flex-direction: column;
-  /* flex-wrap: wrap;   */
+  flex-direction: column;  
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-#indx>article {
-  box-shadow: #2196F3;
-  /* margin-top: auto;
-  margin-bottom: auto; */
+.evento {  
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-bottom: 4px solid crimson;  
 }
 
 .evento-cabecera {
-  display: flex;    
+  display: flex;      
 }
 
 .evento-info {
   display: flex;
   width: 80%;  
-  flex-direction: column;
+  flex-direction: column;  
+  margin-left: 15px;
 }
 
+/* Nombre del evento */
 .evento-info>h3 {
   width: 100%;  
-  height: 80%;
   font-size: 35px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+  margin-bottom: 0;  
+  margin-top: 0;
+}
+
+/* Datos del evento */
+.evento-info>h5 {
+  font-size: 20px;  
 }
 
 /* Imágenes de los eventos */
@@ -385,6 +424,7 @@ button:hover, input[type=submit]:hover {
 .libro {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 500px;
+  margin: 0 auto;
 }
 
 .libro>img {
@@ -398,6 +438,15 @@ button:hover, input[type=submit]:hover {
 .precio {
   color: green;  
 }
+
+.prueba {  
+  width: 87px;
+  margin: 0 auto;  
+}
+
+/* .libro>a {
+  
+} */
 
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
