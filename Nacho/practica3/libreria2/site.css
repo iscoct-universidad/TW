@@ -25,12 +25,24 @@ html {
   grid-template-columns: 40% 40% auto;
   grid-template-rows: auto;
   grid-column-gap: 1%;
-  grid-row-gap: 1%;  
+  grid-row-gap: 1%;    
   grid-template-areas:
   "header header header"
   "nav nav nav"
   "main main aside"
   "footer footer footer";   
+}
+
+@media only screen and (min-width: 600px) {
+  /* Movemos aside debajo en pantallas pequeñas */
+  #wrap {
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "main main"
+      "aside aside"
+      "footer footer";   
+  }
 }
 
 a {
@@ -151,8 +163,17 @@ footer {
   background-color: rgba(219, 224, 146, 0.8);      
 }
 
-#tiendas {
+footer>div {
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
   width: 33.3%;
+  margin: 10px 0;
+}
+
+#tiendas {
+  /* width: 33.3%; */
+  margin: 0 80px;
 }
 
 #tiendas>ul {
@@ -160,21 +181,24 @@ footer {
   padding: 0;
 }
 
-.ciudad {
-
+.ciudad {  
+  font-weight: bold;    
+  font-size: 14px;    
+  margin: 0;
+  margin-top: 10px;
 }
 
 .locales {
-  list-style-type: none;
+  list-style-type: none;  
   padding: 0;
 }
 
 #contacto {
-  width: 33.3%;
+  text-align: center;
 }
 
 #informacion {
-  width: 33.3%;
+  text-align: center;
 }
 
 #informacion>ul {
@@ -423,7 +447,7 @@ button:hover, input[type=submit]:hover {
 
 .libro {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  width: 500px;
+  /* width: 500px; */
   margin: 0 auto;
 }
 
