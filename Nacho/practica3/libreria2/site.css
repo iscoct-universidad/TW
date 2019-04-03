@@ -33,9 +33,10 @@ html {
   "footer footer footer";   
 }
 
-@media only screen and (min-width: 600px) {
+@media screen and (max-device-width: 600px) {
   /* Movemos aside debajo en pantallas pequeñas */
   #wrap {
+    grid-template-columns: auto auto;
     grid-template-areas:
       "header header"
       "nav nav"
