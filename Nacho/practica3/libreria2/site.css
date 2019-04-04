@@ -1,8 +1,5 @@
-/* Separar en varios archivos o solo uno ? -> Solo uno */
-/* Poner clase para cada página */
 /* Poner class solo a contenedores, acceder a los elementos por herencia */
 
-/* Quitar los padding */
 
 /* Estructura general */
 
@@ -17,9 +14,7 @@ html {
 
 #wrap {  
   width: 1200px;
-  margin: auto;
-  /* padding: 20px;   */
-  top: 0;
+  margin: auto;  
 
   display: grid;      
   grid-template-columns: 40% 40% auto;
@@ -38,206 +33,8 @@ a {
   color: inherit;
 }
 
-/* ----------------------------------------------- */
-
-header {
-  grid-area: header;
-  background-color: rgba(255, 255, 255);
-  display: flex;
-  /* margin: auto; */
-}
-
-/* Habrá que ponerle id - O NO */
-header > img { 
-  margin-left: 30%;
-  /* margin: auto; */
-}
-
-#nombre_eslogan {   
-  margin-left: auto;
-  margin-right: 30%;
-  /* margin: auto; */
-}
-
-#nombre_eslogan>h1 {
-  font-size: 35px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-  margin-bottom: 0;
-}
-
-#nombre_eslogan>p {
-  font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 0;
-}
-
-/* ----------------------------------------------- */
-
-nav {
-  grid-area: nav;
-  display: flex;
-  /* padding: 10px 0; */
-  background-color: white;  
-  box-shadow: rgb(120, 214, 135);
-  padding: 0;
-}
-
-nav a:hover {
-  background-color: aqua;
-}
-
-nav>a {
-  flex-basis: 100%;
-  text-align: center;
-  border: 1px solid black;
-}
-
-/* ----------------------------------------------- */
-
-main {
-  grid-area: main;
-  display: flex;  
-  padding: 10px 10px;
-  background-color: rgba(255, 255, 255, 0.8);  
-}
-
-/* ----------------------------------------------- */
-
-aside {
-  grid-area: aside;
-  display: flex;
-  padding: 10px 0;
-  background-color: rgba(255, 255, 255, 0.8);
-
-  /* Flex */
-  flex-flow: column;  
-}
-
-.recomendaciones {
-  margin: auto;
-  width: 75%;
-  word-wrap: nowrap;  
-  text-align: center;  
-}
-
-.recomendaciones>h4 {
-  font-size: 23px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-  margin: auto;
-}
-
-.recomendaciones>ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.recomendaciones>ul>li {
-  font-size: 18px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-#mas-vendidos {
-  
-}
-
-/* ----------------------------------------------- */
-
-footer {
-  grid-area: footer;
-  display: flex;
-  padding: 10px 0;
-  background-color: rgba(219, 224, 146, 0.8);      
-}
-
-footer>div {
-  align-items: center;
-  justify-content: center;
-  justify-content: center;
-  width: 33.3%;
-  margin: 10px 0;
-}
-
-#tiendas {
-  /* width: 33.3%; */
-  margin: 0 80px;
-}
-
-#tiendas>ul {
-  list-style-type: none;  
-  padding: 0;
-}
-
-.ciudad {  
-  font-weight: bold;    
-  font-size: 14px;    
-  margin: 0;
-  margin-top: 10px;
-}
-
-.locales {
-  list-style-type: none;  
-  padding: 0;
-}
-
-#contacto {
-  text-align: center;
-}
-
-#contacto img {
-  width: 20px;
-  height: 20px
-}
-
-#email-y-logo {
-  display: flex;
-  margin: 20px 70px 29px 70px;
-  /* margin-bottom: 20px;   */
-  /* margin-left: 10px; */
-}
-
-#email-y-logo>p {
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#email-y-logo>img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#media {
-  display: flex;  
-  /* flex-direction: column; */
-}
-
-#media>img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#informacion {
-  text-align: center;
-}
-
-#informacion>ul {
-  list-style-type: none;  
-}
-
-#informacion>ul>li {
-  margin-top: 10px;
-}
-
-#redes {
-  
-}
-
-/* ----------------------------------------------- */
 
 /* Formularios */
-
 form {
   display: flex;
   flex-direction: column;  
@@ -257,12 +54,197 @@ label>input {
 label>p {
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 4;
   width: 25%;
 }
 
 input[type=text], select, textarea, input[type="email"] {
   width: 100%;
+}
+
+
+/* ----------------------------------------------- */
+
+header {
+  grid-area: header;
+  background-color: rgba(255, 255, 255);
+
+  display: flex;  
+}
+
+header > img { 
+  margin-left: 30%;
+}
+
+#nombre_eslogan {   
+  margin-left: auto;
+  margin-right: 30%;
+}
+
+#nombre_eslogan>h1 {
+  margin-bottom: 0;
+
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+#nombre_eslogan>p {
+  margin-top: 0;
+
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ----------------------------------------------- */
+
+nav {
+  grid-area: nav;
+  background-color: white;    
+
+  display: flex;  
+  padding: 0;
+}
+
+nav a:hover {
+  background-color: aqua;
+}
+
+nav>a {
+  flex-basis: 100%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* ----------------------------------------------- */
+
+main {
+  grid-area: main;
+  background-color: rgba(255, 255, 255, 0.8);  
+
+  display: flex;  
+  padding: 10px 10px;
+}
+
+/* ----------------------------------------------- */
+
+aside {
+  grid-area: aside;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+  
+  display: flex;
+  flex-flow: column;  
+}
+
+.recomendaciones {
+  margin: auto;
+  width: 75%;
+  
+  text-align: center;  
+}
+
+.recomendaciones>h4 {
+  margin: auto;
+
+  font-size: 23px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+.recomendaciones>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recomendaciones>ul>li {
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* ----------------------------------------------- */
+
+footer {
+  grid-area: footer;
+  background-color: rgba(219, 224, 146, 0.8);      
+
+  display: flex;
+  padding: 10px 0;
+}
+
+footer>div {
+  align-items: center;
+  justify-content: center;  
+
+  width: 33.3%;
+  margin: 10px 0;
+}
+
+#tiendas {
+  margin: 0 80px;
+}
+
+#tiendas>ul {
+  padding: 0;
+  list-style-type: none;  
+}
+
+.ciudad {  
+  margin: 0;
+  margin-top: 10px;
+
+  font-weight: bold;    
+  font-size: 14px;    
+}
+
+.locales {
+  list-style-type: none;  
+  padding: 0;
+}
+
+#contacto {
+  text-align: center;
+}
+
+#contacto img {
+  width: 20px;
+  height: 20px
+}
+
+#email-y-logo {
+  display: flex;
+  margin: 20px 70px 29px 70px;  
+}
+
+#email-y-logo>p {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#email-y-logo>img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#media {
+  display: flex;    
+}
+
+#media>img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#informacion {
+  text-align: center;
+}
+
+#informacion>ul {
+  list-style-type: none;  
+}
+
+#informacion>ul>li {
+  margin-top: 10px;
 }
 
 /* ----------------------------------------------- */
@@ -392,24 +374,24 @@ input[type=text], select, textarea, input[type="email"] {
 }
 
 button, input[type=submit] {
-  font-weight: bold;    
-  background-color: rgba(58, 161, 58, 0.705);  
-  font-size: 15px;
   cursor: pointer;
   transition-duration: 0.2s;
+  background-color: rgba(58, 161, 58, 0.705);  
   border: none;
-  padding: 10px 10px;
-  margin: 4px 2px;
+
+  font-weight: bold;    
+  font-size: 15px;
   text-decoration: none;
   text-align: center;
+
+  padding: 10px 10px;
+  margin: 4px 2px;
 }
 
 button:hover, input[type=submit]:hover {
   background-color: goldenrod;
   color: white;
 }
-
-/* Formulario */
 
 #form-orders {  
   margin-left: 0;
@@ -495,10 +477,6 @@ button:hover, input[type=submit]:hover {
   margin: 0 auto;  
 }
 
-/* .libro>a {
-  
-} */
-
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
 /* search.html */
@@ -510,6 +488,7 @@ select {
 
 .form-subtitle {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 25%;
   margin: 0;
   margin-top: 20px;
   margin-left: 10px;
@@ -529,13 +508,7 @@ select {
   margin-right: 0;
 }
 
-.form-subtitle {
-  width: 25%;
-  margin-right: 10;
-}
-
 .radio {
-  /* text-align: right; */
   display: flex;
 }
 
@@ -556,7 +529,7 @@ select {
 }
 
 /* ----------------------------------------------- */
-/* ----------------------------------------------- */
+/* ------------------Query------------------------ */
 
 @media screen and (max-device-width: 600px) {
   /* Movemos aside debajo en pantallas pequeñas */
