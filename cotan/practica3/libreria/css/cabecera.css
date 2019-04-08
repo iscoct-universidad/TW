@@ -5,15 +5,20 @@ header {
 
 #titulos {
     display: grid;
-    grid-template-rows: 60% 30%;
-    text-align: center;
+    grid-template-rows: 40% 30%;
 }
 
 #navegacionTop {
     width: 100%;
     overflow: auto;
-    margin: 20px;
-    background-color: darkgray;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#logo {
+	width: 50%;
+	margin: 3%;
+	border-radius: 50%;
 }
 
 #navegacionTop ul {
@@ -25,10 +30,11 @@ header {
     float: left;
     text-align: center;
     width: 20%;
+    margin-bottom: 1%;
 }
 
 .enlaceTop:link {
-    color: white;
+    color: black;
 }
 
 .enlaceTop:visited {
@@ -36,5 +42,5 @@ header {
 }
 
 .enlaceTop:hover {
-    color: aqua;
+    font-weight: bold;
 }

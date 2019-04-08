@@ -1,14 +1,14 @@
-#conjuntoEventos {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
 #bloqueCentral {
+	margin-top: 1%;
+	margin-bottom: 1%;
     display: grid;
     grid-template-columns: 80% 20%;
 }
 
-.imagenCentral {
-    width: 200px;
-    height: 200px;
+#lateral {
+	margin-left: 2%;
+}
+
+.lateral {
+	margin-left: 3%;
 }

@@ -1,0 +1,25 @@
+main p {
+	margin-left: 7%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#listaInfo {
+	list-style-type: none;
+}
+
+main h3 {
+	margin-left: 3%;
+}
+
+#dinero {
+	font-weight: bold;
+}
+
+#descripcion {
+	margin-left: 8%;
+}
+
+#tituloDescripcion {
+	margin-left: 7%;
+}
