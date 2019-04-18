@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- Ejercicio 4, Práctica 1 -->
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ignacio Vellido Expósito"> 
+    <title>La Librería - Pedidos</title>    
+    <link rel="stylesheet" href="site.css">      
+  </head>
+  <body>
+    <div id="wrap">    
+      <header> <!-- Encabezado -->      
+        <img src="./img/logos/logo.png" alt="Logo de La Librería"> <!-- Logo -->
+        <div id="nombre_eslogan">
+          <h1>La Librería</h1>
+          <p>Para los fans de la lectura</p>
+        </div>      
+      </header>
+
+      <nav> <!-- Menú de navegación -->                
+        <a href="index.html">Inicio</a>
+        <a href="catalogue.html">Catálogo</a>
+        <a href="search.html">Búsqueda</a>
+        <a href="stores.html">Tiendas</a>
+        <a href="orders.html">Pedidos</a>                
+      </nav>
+
+      <main id="orders">
+        <div id="info-pedido">
+          <div id="datos-libro">
+              <img src="./img/libros/1984.jpeg" alt="Carátula del libro">                
+              <ul id="datos-pedido">
+                <li>
+                  <h4 class="categoria">Título</h4>
+                  <p class="valor">El título del libro</p>
+                </li>
+                <li>
+                  <h4 class="categoria">Autor</h4>
+                  <p class="valor">Menganito y Fulanito</p>
+                </li>
+                <li>
+                  <h4 class="categoria">ISBN</h4>
+                  <p class="valor">xxx-xxx-xxx</p>
+                </li>
+                <li>
+                  <h4 class="categoria">Editorial</h4>
+                  <p class="valor">UnaCualquiera.SL</p>
+                </li>
+                <li>
+                  <h4 class="categoria">Año</h4>
+                  <p class="valor">2019</p>
+                </li>
+              </ul>     
+          </div>          
+
+          <p id="descripcion-pedido">
+            En el año 1984 Londres es una ciudad lúgubre en la que la Policía del 
+            Pensamiento controla de forma asfixiante la vida de los ciudadanos. 
+            Winston Smith es un peón de este engranaje perverso y su cometido es 
+            reescribir la historia para adaptarla a lo que el Partido considera 
+            la versión oficial de los hechos. Hasta que decide replantearse la 
+            verdad del sistema que los gobierna y somete
+          </p>
+          <div id="precio-pedido">
+            <h4>PRECIO</h4>
+            <p>6€</p>
+          </div>
+        </div>
+
+        <form id="form-orders" action="procesar.php" method="POST">
+            <label><p>Nombre y apellidos</p>
+              <input type="text" name="nombre"/>
+            </label>
+            <label><p>Dirección de envío</p>
+              <textarea name="direccion"></textarea>
+            </label>
+            <label><p>Email</p>
+              <input type="email" name="email"/>
+            </label>
+            <label><p>Número de tarjeta</p>
+              <input type="text" name="tarjeta"/>
+            </label>
+            <label><p>Fecha de caducidad</p>
+              <input type="text" name="caducidad"/>
+            </label>
+            <label><p>CVC</p>
+              <input type="text" name="cvc"/>
+            </label>          
+
+            <div class="radio">
+              <p class="form-subtitle">Marque si procede</p>
+              <div class="radio-options">
+                <label><input type="checkbox" name="condiciones" value="condiciones"/>
+                  <p class="radio-text">He leído y acepto las condiciones de compra</p>
+                </label>
+                <label><input type="checkbox" name="maillist" value="maillist"/>
+                  <p class="radio-text">Deseo recibir información sobre novedades</p>
+                </label>
+                <label><input type="checkbox" name="regalo" value="regalo"/>
+                  <p class="radio-text">Deseo el envío envuelto para regalo</p>
+                </label>            
+              </div>
+            </div>
+    
+            <input type="submit" value="Hacer pedido"/>
+          </form>
+      </main>
+
+      <aside> <!-- Barra lateral -->
+        <div id="mas-vendidos" class="recomendaciones">
+          <h4>Más vendidos</h4>
+          <ul>
+            <li>El Señor de los Anillos</li>
+            <li>El Principito</li>
+            <li>Harry Potter y la Piedra Filosofal</li>
+          </ul>
+        </div>
+
+        <div id="mas-populares" class="recomendaciones">
+          <h4>Más populares</h4>
+          <ul>
+            <li>J. R. R. Tolkien</li>
+            <li>J. K. Rowling</li>
+            <li>Agatha Christie</li>
+          </ul>
+        </div>
+      </aside>
+
+      <footer>
+        <div id="tiendas">
+          <ul>
+            <li>
+              <p class="ciudad">Barcelona</p>            
+              <ul class="locales">
+                <li>Park Güell, 08024, Barcelona</li>
+              </ul>
+            </li>
+            <li>
+              <p class="ciudad">Madrid</p>
+              <ul class="locales">
+                <li>Av. de Concha Espina, 1, 28036, Madrid</li>
+                <li>Calle de Floridablanca, S/N, 28071, Madrid</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div id="contacto">
+          <!-- Esta ajustado el tamaño por visibilidad -->
+          <div id="email-y-logo">
+            <img src="./img/logos/mail.png" alt="Logo dirección de correo">
+            <p>lalibreria@gmail.com</p>
+          </div>
+          <div id="media">
+            <img src="./img/logos/twitter.png" alt="Logo de Twitter">
+            <img src="./img/logos/youtube.png" alt="Logo de Youtube">
+            <img src="./img/logos/facebook.png" alt="Logo de Facebook">
+          </div>
+        </div>
+
+        <div id="informacion">
+          <ul>
+            <li><a href="contact">Contacto</a></li>
+            <li><a href="aboutus">Sobre nosotros</a></li>
+            <li><a href="map">Mapa del sitio</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
