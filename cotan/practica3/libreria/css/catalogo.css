@@ -1,0 +1,18 @@
+#catalogo {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+#catalogo li {
+	margin: 3%;
+}
+
+.autor {
+	margin-left: 5%;
+}
+
+.precio {
+	margin-left: 10%;
+}

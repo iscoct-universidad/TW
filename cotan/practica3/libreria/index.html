@@ -5,14 +5,16 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="author" content="Francisco José Cotán López"/>
+        <link rel="stylesheet" href="css/comun.css">
         <link rel="stylesheet" href="css/cabecera.css">
         <link rel="stylesheet" href="css/central.css">
         <link rel="stylesheet" href="css/pie.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <!-- Cabecera de la página -->
-        <header>
-            <img src="./img/logos/libreria.png" alt="Eslogan del Lector de Libros"/>
+        <header class="borde colorFondo">
+            <img id="logo" src="./img/logos/libreria.png" alt="Eslogan del Lector de Libros"/>
 
             <section id="titulos">
                 <h1>
@@ -26,11 +28,11 @@
 
         <!-- Barra de navegación -->
 
-        <nav id="navegacionTop">
+        <nav class="borde colorFondo" id="navegacionTop">
             <ul>
                 <li><a class="enlaceTop" href="./index.html">Inicio</a></li>
                 <li><a class="enlaceTop" href="./catalogo.html">Catálogo</a></li>
-                <li><a class="enlaceTop" href="./busqueda.html">Búsqueda</li>
+                <li><a class="enlaceTop" href="./busqueda.html">Búsqueda</a></li>
                 <li><a class="enlaceTop" href="./tienda.html">Tiendas</a></li>
                 <li><a class="enlaceTop" href="./pedidos.html">Pedidos</a></li>
             </ul>
@@ -39,7 +41,7 @@
         <!-- Bloque principal de la página -->
 
         <section id="bloqueCentral">
-            <main id="conjuntoEventos">
+            <main class="borde colorFondo" id="conjuntoEventos">
 
                 <!-- Evento número 1 -->
 
@@ -71,8 +73,8 @@
 
             <!-- Barra de al lado -->
 
-            <aside>
-                <section id="masVendidos">
+            <aside class="borde colorFondo" id="lateral">
+                <section class="lateral" id="masVendidos">
                     <h2>
                         Más vendidos
                     </h2>
@@ -84,7 +86,7 @@
                     </ul>
                 </section>
     
-                <section id="masPopulares">
+                <section class="lateral" id="masPopulares">
                     <h2>
                         Más populares
                     </h2>
@@ -101,24 +103,24 @@
 
         <!-- Pie de la página -->
 
-        <footer id="pie">
+        <footer class="borde colorFondo" id="pie">
 
             <!-- Números de contactos -->
 
             <section id="contacto">
                 <ul>
-                    <li>
+                    <li class="ciudad">
                         Granada
 
-                        <ul>
+                        <ul class="ubicacion">
                             <li>Reyes Católicos (555 112233)</li>
                             <li>Avda Dilar (555 332211)</li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="ciudad">
                         Málaga
 
-                        <ul>
+                        <ul class="ubicacion">
                             <li>Marqués de Larios (555 221133)</li>
                         </ul>
                     </li>
@@ -144,10 +146,10 @@
 
             <nav id="navPie">
                 <ul>
-                    <li><a href="https://www.w3schools.com/">La empresa</a></li>
-                    <li><a href="https://www.w3schools.com/">Política de envío</a></li>
-                    <li><a href="https://www.w3schools.com/">Preguntas frecuentes</a></li>
-                    <li><a href="https://www.w3schools.com/">Mapa del sitio</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">La empresa</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">Política de envío</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">Preguntas frecuentes</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">Mapa del sitio</a></li>
                 </ul>
             </nav>
         </footer>

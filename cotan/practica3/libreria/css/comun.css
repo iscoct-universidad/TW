@@ -1,13 +1,8 @@
-
-
-#conjuntoEventos {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-#bloqueCentral {
-    display: grid;
-    grid-template-columns: 80% 20%;
+body {
+	margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .imagenCentral {
@@ -15,31 +10,34 @@
     height: 200px;
 }
 
-#pie {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: coral;
+.borde {
+	border-style: solid;
 }
 
-#contacto ul {
-    list-style-type: none;
-    font-weight: bold;
+.colorFondo {
+	background-color: darkgray;
 }
 
-#redesSociales ul {
-    list-style-type: none;
+input[type="text"] {
+	resize: vertical;
+	border-style: solid;
+	border-color: #ccc;
+	width: 95%;
+	padding: 0.5%;
+	margin: 1%;
 }
 
-.navImagenes {
-    float: left;
-    width: 20%;
+input[type="date"] {
+	display: block;
+	margin: 1%;
 }
 
-#navPie ul {
-    list-style-type: none;
+label {
+	display: block;
+	margin: 0.5%;
 }
 
-#navPie ul li a {
-    text-decoration: none;
-    color: white;
+input[type="submit"] {
+	display: block;
+	margin: 0.5%;
 }

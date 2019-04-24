@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Catálogo de El Péndulo</title>
+        <title>El Péndulo</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="author" content="Francisco José Cotán López"/>
+        <link rel="stylesheet" href="css/comun.css">
+        <link rel="stylesheet" href="css/cabecera.css">
+        <link rel="stylesheet" href="css/central.css">
+        <link rel="stylesheet" href="css/pie.css">
+        <link rel="stylesheet" href="css/catalogo.css">
     </head>
     <body>
         <!-- Cabecera de la página -->
-        <header>
-            <img src="./img/logos/libreria.png" alt="Eslogan del Lector de Libros"/>
-            <h1>
-                El Lector de Libros
-            </h1>
-            <h2>
-                Contando historias desde hace 100 años
-            </h2>
+        <header class="borde colorFondo">
+            <img id="logo" src="./img/logos/libreria.png" alt="Eslogan del Lector de Libros"/>
+
+            <section id="titulos">
+                <h1>
+                    El Lector de Libros
+                </h1>
+                <h2>
+                    Contando historias desde hace 100 años
+                </h2>
+            </section>
         </header>
 
         <!-- Barra de navegación -->
 
-        <nav>
+        <nav class="borde colorFondo" id="navegacionTop">
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./catalogo.html">Catálogo</a></li>
-                <li><a href="./busqueda.html">Búsqueda</li>
-                <li><a href="./tienda.html">Tiendas</a></li>
-                <li><a href="./pedidos.html">Pedidos</a></li>
+                <li><a class="enlaceTop" href="./index.html">Inicio</a></li>
+                <li><a class="enlaceTop" href="./catalogo.html">Catálogo</a></li>
+                <li><a class="enlaceTop" href="./busqueda.html">Búsqueda</a></li>
+                <li><a class="enlaceTop" href="./tienda.html">Tiendas</a></li>
+                <li><a class="enlaceTop" href="./pedidos.html">Pedidos</a></li>
             </ul>
         </nav>
 
         <!-- Bloque principal de la página -->
 
-        <main>
-            <section>
+        <section id="bloqueCentral">
+            <main class="borde colorFondo" id="conjuntoEventos">
 
                 <!-- Lista de libros -->
 
-                <ul>
+                <ul id="catalogo">
                     <!-- Libro número 1 -->
 
                     <li>
-                        <div>
+                        <div class="listCatalogo">
                             <img src="./img/libros/marina.jpg" alt="Marina" width="200" height="200"/>
-                            <h2>Marina</h2>
-                            <p>Carlos Ruiz Zafón</p>
-                            <p>10€</p>
+                            <h2 class="titulo">Marina</h2>
+                            <p class="autor">Carlos Ruiz Zafón</p>
+                            <p class="precio">10€</p>
                             <form><input type="submit" value="Comprar"/></form>
                         </div>
                     </li>
@@ -53,11 +61,11 @@
                     <!-- Libro número 2 -->
 
                     <li>
-                        <div>
+                        <div class="listCatalogo">
                             <img src="./img/libros/angelesDemonios.jpg" alt="Ángeles y Demonios" width="200" height="200"/>
-                            <h2>Ángeles y Demonios</h2>
-                            <p>Dan Brown</p>
-                            <p>10€</p>
+                            <h2 class="titulo">Ángeles y Demonios</h2>
+                            <p class="autor">Dan Brown</p>
+                            <p class="precio">10€</p>
                             <form><input type="submit" value="Comprar"/></form>
                         </div>
                     </li>
@@ -65,11 +73,11 @@
                     <!-- Libro número 3 -->
 
                     <li>
-                        <div>
+                        <div class="listCatalogo">
                             <img src="./img/libros/idhun.jpg" alt="Memorias de Idhún: La Resistencia" width="200" height="200"/>
-                            <h2>Memorias de Idhún: La Resistencia</h2>
-                            <p>Laura Gallego</p>
-                            <p>10€</p>
+                            <h2 class="titulo">Memorias de Idhún: La Resistencia</h2>
+                            <p class="autor">Laura Gallego</p>
+                            <p class="precio">10€</p>
                             <form><input type="submit" value="Comprar"/></form>
                         </div>
                     </li>
@@ -77,11 +85,11 @@
                     <!-- Libro número 4 -->
 
                     <li>
-                        <div>
+                        <div class="listCatalogo">
                             <img src="./img/libros/inteligenciaEmocional.jpg" alt="Inligencia Emocional" width="200" height="200"/>
-                            <h2>Inteligencia Emocional</h2>
-                            <p>Daniel Goleman</p>
-                            <p>Nordica Libros SL</p>
+                            <h2 class="titulo">Inteligencia Emocional</h2>
+                            <p class="autor">Daniel Goleman</p>
+                            <p class="precio">Nordica Libros SL</p>
                             <form><input type="submit" value="Comprar"/></form>
                         </div>
                     </li>
@@ -89,68 +97,68 @@
                     <!-- Libro número 5 -->
 
                     <li>
-                        <div>
+                        <div class="listCatalogo">
                             <img src="./img/libros/juegoDeTronos.jpg" alt="Juego de Tronos: Canción de Hielo y Fuego" width="200" height="200"/>
-                            <h2>Juego de Tronos: Canción de Hielo y Fuego</h2>
-                            <p>George R. R. Martin</p>
-                            <p>20€</p>
+                            <h2 class="titulo">Juego de Tronos: Canción de Hielo y Fuego</h2>
+                            <p class="autor">George R. R. Martin</p>
+                            <p class="precio">20€</p>
                             <form><input type="submit" value="Comprar"/></form>
                         </div>
                     </li>
                 </ul>
 
-            </section>
-        </main>
+            </main>
 
-        <!-- Barra de al lado -->
+            <!-- Barra de al lado -->
 
-        <aside>
-            <section id="masVendidos">
-                <h2>
-                    Más vendidos
-                </h2>
-
-                <ul>
-                    <li>El quijote</li>
-                    <li>Ulises</li>
-                    <li>Arguiñano cocina</li>
-                </ul>
-            </section>
-
-            <section id="masPopulares">
-                <h2>
-                    Más populares
-                </h2>
-
-                <ul>
-                    <li>Charles Dickens</li>
-                    <li>Julio Verne</li>
-                    <li>Carlos Ruiz Zafón</li>
-                </ul>
-            </section>
-
-        </aside>
+            <aside class="borde colorFondo" id="lateral">
+                <section class="lateral" id="masVendidos">
+                    <h2>
+                        Más vendidos
+                    </h2>
+    
+                    <ul>
+                        <li>El quijote</li>
+                        <li>Ulises</li>
+                        <li>Arguiñano cocina</li>
+                    </ul>
+                </section>
+    
+                <section class="lateral" id="masPopulares">
+                    <h2>
+                        Más populares
+                    </h2>
+    
+                    <ul>
+                        <li>Charles Dickens</li>
+                        <li>Julio Verne</li>
+                        <li>Carlos Ruiz Zafón</li>
+                    </ul>
+                </section>
+    
+            </aside>
+        </section>
 
         <!-- Pie de la página -->
 
-        <footer>
+        <footer class="borde colorFondo" id="pie">
 
             <!-- Números de contactos -->
 
             <section id="contacto">
                 <ul>
-                    <li>
+                    <li class="ciudad">
                         Granada
 
-                        <ul>
+                        <ul class="ubicacion">
                             <li>Reyes Católicos (555 112233)</li>
                             <li>Avda Dilar (555 332211)</li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="ciudad">
                         Málaga
 
-                        <ul>
+                        <ul class="ubicacion">
                             <li>Marqués de Larios (555 221133)</li>
                         </ul>
                     </li>
@@ -160,25 +168,26 @@
             <!-- Incorporamos la agrupación de los elementos de contacto -->
 
             <section id="redesSociales">
-                <div><img src="./img/logos/mail.png" alt="Logo de dirección de correo" width="20" height="20"/></div>
-
                 <p>lectordelibros@gmail.com</p>
-
-                <div><img src="./img/logos/twitter.png" alt="Logo de Twitter" width="20" height="20"/></div>
-                <div><img src="./img/logos/facebook.png" alt="Logo de Facebook" width="20" height="20"/></div>
-                <div><img src="./img/logos/pinterest.png" alt="Logo de Pinterest" width="20" height="20"/></div>
-                <div><img src="./img/logos/youtube.png" alt="Logo de Youtube" width="20" height="20"/></div>
+                
+                <ul>
+                    <li class="navImagenes"><img src="./img/logos/mail.png" alt="Logo de dirección de correo" width="20" height="20"/></li>
+                    <li class="navImagenes"><img src="./img/logos/twitter.png" alt="Logo de Twitter" width="20" height="20"/></li>
+                    <li class="navImagenes"><img src="./img/logos/facebook.png" alt="Logo de Facebook" width="20" height="20"/></li>
+                    <li class="navImagenes"><img src="./img/logos/pinterest.png" alt="Logo de Pinterest" width="20" height="20"/></li>
+                    <li class="navImagenes"><img src="./img/logos/youtube.png" alt="Logo de Youtube" width="20" height="20"/></li>
+                </ul>
             </section>
 
             <!-- Navegación para ir a otras páginas de la librería -->
             <!-- Enlaces provisionales -->
 
-            <nav>
+            <nav id="navPie">
                 <ul>
-                    <li><a href="https://www.w3schools.com/">La empresa</a></li>
-                    <li><a href="https://www.w3schools.com/">Política de envío</a></li>
-                    <li><a href="https://www.w3schools.com/">Preguntas frecuentes</a></li>
-                    <li><a href="https://www.w3schools.com/">Mapa del sitio</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">La empresa</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">Política de envío</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">Preguntas frecuentes</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">Mapa del sitio</a></li>
                 </ul>
             </nav>
         </footer>
