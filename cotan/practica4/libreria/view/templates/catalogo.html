@@ -18,6 +18,7 @@
 					<img src="{{ libro.rutaImagen }}" alt="{{ libro.titulo }}" width="200" height="200"/>
 					<h2 class="titulo">{{ libro.titulo }}</h2>
 					<p class="autor">{{ libro.autor }}</p>
+					<p class="genero">{{ libro.genero }}</p>
 					<p class="precio">{{ libro.precio }}</p>
 					<button type="button" 
 						onclick='window.open("/comprar.php?isbn={{libro.isbn}}");'>Comprar</button>

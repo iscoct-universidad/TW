@@ -12,7 +12,8 @@
 	foreach($libros as $book)
 		array_push($formatoLibros, ['rutaImagen' => $book -> rutaImagen,
 			'titulo' => $book -> titulo, 'autor' => $book -> nombreAutor,
-			'precio' => $book -> precio, 'isbn' => $book -> ISBN]);
+			'precio' => $book -> precio, 'isbn' => $book -> ISBN,
+			'genero' => $book -> genero]);
 	
 	$argumentos['libros'] = $formatoLibros;
 	
