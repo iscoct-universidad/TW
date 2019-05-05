@@ -1,0 +1,28 @@
+{% extends "./view/templates/base.html" %}
+{% block main %}
+	<main class="borde colorFondo">
+		{% if text %}
+			<p>{{ text }}</p>
+		{% endif %}
+		<h2>Información del libro</h2>
+		<p>Título: {{ libro.titulo }}</p>
+		<p>Nombre del autor: {{ libro.nombreAutor }}</p>
+		<p>Editorial: {{ libro.editorial }}</p>
+		<p>Precio: {{ libro.precio }}</p>
+		<p>ISBN: {{ libro.isbn }}</p>
+		<p>Portada <img src="{{ libro.rutaImagen }}" alt="Portada de {{ libro.titulo }}"></p>
+		
+		<form method="post">
+			Nombre y apellidos <input type="text" value="{{ comprador.nombreApellidos }} " name="nombreApellidos">
+			Dirección de envío <input type="text" value="{{ comprador.direccionEnvio }}" name="direccionEnvio">
+			Email <input type="text" name="email" value="{{ comprador.email }}">
+			Número de tarjeta <input type="text" name="numTarjeta" value="{{ comprador.numTarjeta }}">
+			Fecha de caducidad <input type="date" name="fechaCaducidad" value="{{ comprador.fechaCaducidad }}">
+			CVC <input type="number" name="cvc" value="{{ comprador.cvc }}">
+			<input type="submit" value="Enviar">
+		</form>
+	</main>
+{% endblock %}
+{% block text %}
+	
+{% endblock %}

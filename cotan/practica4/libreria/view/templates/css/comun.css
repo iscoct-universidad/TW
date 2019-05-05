@@ -1,0 +1,43 @@
+body {
+	margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#registroUsuario {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.imagenCentral {
+    width: 200px;
+    height: 200px;
+}
+
+.borde {
+	border-style: solid;
+}
+
+.colorFondo {
+	background-color: darkgray;
+}
+
+input[type="text"], input[type="password"] {
+	resize: vertical;
+	border-style: solid;
+	border-color: #ccc;
+	width: 95%;
+	padding: 0.5%;
+	margin: 1%;
+}
+
+input[type="date"] {
+	display: block;
+	margin: 1%;
+}
+
+label, input[type="submit"] {
+	display: block;
+	margin: 0.5%;
+}

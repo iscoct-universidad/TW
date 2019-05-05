@@ -1,0 +1,46 @@
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+#titulos {
+    display: grid;
+    grid-template-rows: 40% 30%;
+}
+
+#navegacionTop {
+    width: 100%;
+    overflow: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#logo {
+	width: 50%;
+	margin: 3%;
+	border-radius: 50%;
+}
+
+#navegacionTop ul {
+    list-style-type: none;
+}
+
+.enlaceTop {
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+    margin-bottom: 1%;
+}
+
+.enlaceTop:link {
+    color: black;
+}
+
+.enlaceTop:visited {
+    color: white;
+}
+
+.enlaceTop:hover {
+    font-weight: bold;
+}

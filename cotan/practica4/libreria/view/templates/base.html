@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>El Péndulo</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="author" content="Francisco José Cotán López"/>
+        <link rel="stylesheet" href="./view/templates/css/comun.css">
+        <link rel="stylesheet" href="./view/templates/css/cabecera.css">
+        <link rel="stylesheet" href="./view/templates/css/central.css">
+        <link rel="stylesheet" href="./view/templates/css/pie.css">
+        {% block css %}{% endblock %}
+    </head>
+    <body>
+        <!-- Cabecera de la página -->
+        <header class="borde colorFondo">
+            <img id="logo" src="./view/templates/img/logos/libreria.png" alt="Eslogan del Lector de Libros"/>
+
+            <section id="titulos">
+                <h1>
+                    El Lector de Libros
+                </h1>
+                <h2>
+                    Contando historias desde hace 100 años
+                </h2>
+            </section>
+        </header>
+
+        <!-- Barra de navegación -->
+
+        <nav class="borde colorFondo" id="navegacionTop">
+            <ul>
+                <li><a class="enlaceTop" href="./index.php">Inicio</a></li>
+                <li><a class="enlaceTop" href="./catalogo.php">Catálogo</a></li>
+                <li><a class="enlaceTop" href="./busqueda.php">Búsqueda</a></li>
+                <li><a class="enlaceTop" href="./tienda.php">Tiendas</a></li>
+                
+                {% if usuarioRegistrado %}
+	                <li><a class="enlaceTop" href="./addLibro.php">Añadir libro</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        <!-- Bloque principal de la página -->
+
+        <section id="bloqueCentral">
+        	{% block main %}{% endblock %}
+
+            <!-- Barra de al lado -->
+
+            <aside class="borde colorFondo" id="lateral">
+                <section class="lateral" id="masVendidos">
+                    <h2>
+                        Más vendidos
+                    </h2>
+    
+                    <ul>
+                    	{% for autor in autoresMasVentas %}
+	                    	<li>{{autor}}</li>
+                    	{% endfor %}
+                    </ul>
+                </section>
+    
+    			<section id="registroUsuario">
+    				{% if usuarioRegistrado %}
+    					<p>Usuario: {{ usuarioRegistrado.nombreCuenta }}</p>
+    					<button type="button" onclick="cerrarSesion()">
+    						Cerrar sesión
+    					</button>
+    				{% else %}
+						Nombre cuenta: <input type="text" name="nombreCuenta">
+						Contraseña: <input type="password" name="password">
+						<button type="button" onclick="registrarUsuario()">
+							Enviar
+						</button>
+    				{% endif %}
+    			</section>
+            </aside>
+        </section>
+
+        <!-- Pie de la página -->
+
+        <footer class="borde colorFondo" id="pie">
+
+            <!-- Números de contactos -->
+
+            <section id="contacto">
+                <ul>
+                    <li class="ciudad">
+                        Granada
+
+                        <ul class="ubicacion">
+                            <li>Reyes Católicos (555 112233)</li>
+                            <li>Avda Dilar (555 332211)</li>
+                        </ul>
+                    </li>
+                    <li class="ciudad">
+                        Málaga
+
+                        <ul class="ubicacion">
+                            <li>Marqués de Larios (555 221133)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            
+            <!-- Incorporamos la agrupación de los elementos de contacto -->
+
+            <section id="redesSociales">
+                <p>lectordelibros@gmail.com</p>
+                
+                <ul>
+                    <li class="navImagenes"><img src="./view/templates/img/logos/mail.png" alt="Logo de dirección de correo" width="20" height="20"/></li>
+                    <li class="navImagenes"><img src="./view/templates/img/logos/twitter.png" alt="Logo de Twitter" width="20" height="20"/></li>
+                    <li class="navImagenes"><img src="../view/templates/img/logos/facebook.png" alt="Logo de Facebook" width="20" height="20"/></li>
+                    <li class="navImagenes"><img src="./view/templates/img/logos/pinterest.png" alt="Logo de Pinterest" width="20" height="20"/></li>
+                    <li class="navImagenes"><img src="./view/templates/img/logos/youtube.png" alt="Logo de Youtube" width="20" height="20"/></li>
+                </ul>
+            </section>
+
+            <!-- Navegación para ir a otras páginas de la librería -->
+            <!-- Enlaces provisionales -->
+
+            <nav id="navPie">
+                <ul>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">La empresa</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">Política de envío</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">Preguntas frecuentes</a></li>
+                    <li><a class="enlacePie" href="https://www.w3schools.com/">Mapa del sitio</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script type="text/javascript">
+        	function hacerPeticion(ruta, cabecera) {
+        		fetch(ruta, cabecera)
+        			.then((res) => {
+        				return res.text();
+        			}).then((text) => {
+        				console.log(`Respuesta: ${text}`);
+        				
+        				location.reload();
+        			}).catch((err) => {
+        				console.log("Error: ", err);
+        			});
+        	}
+        	
+        	function registrarUsuario() {
+        		let nombreCuenta = document.getElementsByName("nombreCuenta")[0].value;
+        		let password = document.getElementsByName("password")[0].value;
+        		let formData = new FormData();
+        		
+        		formData.append('nombreCuenta', nombreCuenta);
+        		formData.append('password', password);
+        		
+        		let cabecera = {
+        			method: 'POST',
+        			body: formData
+        		};
+        		
+        		hacerPeticion('/registrarUsuario.php', cabecera);
+        	}
+        	
+        	function cerrarSesion() {
+        		let cabecera = {
+        			method: 'GET'
+        		}
+        		
+        		hacerPeticion('/cerrarSesion.php', cabecera);
+        	}
+        </script>
+        {% block javascript %}{% endblock %}
+    </body>
+</html>

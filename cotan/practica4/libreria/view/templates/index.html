@@ -1,0 +1,17 @@
+{% extends "./view/templates/base.html" %}
+{% block css %}
+	<link rel="stylesheet" href="./view/templates/css/index.css">
+{% endblock %}
+{% block main %}
+	<main class="borde colorFondo" id="conjuntoEventos">
+
+		{% for evento in eventos %}
+			<div class="evento">
+				<img class="imagenCentral" src="{{ evento.rutaImagen }}" alt="{{ evento.titulo }}">
+				<h2>{{ evento.titulo }}</h2>
+				<h3>{{ evento.fecha }}</h3>
+				<p>{{ evento.descripcion }}</p>
+			</div>
+		{% endfor %}
+	</main>
+{% endblock %}

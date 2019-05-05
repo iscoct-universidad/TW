@@ -1,0 +1,18 @@
+#tablaTiendas {
+	width: 95%;
+	margin: 2%;
+	text-align: center;
+	list-style-type: none;
+}
+
+#tablaTiendas th {
+	border-style: solid;
+}
+
+#tablaTiendas td {
+	border-style: solid;
+}
+
+#tablaTiendas td ul {
+	list-style-type: none;
+}

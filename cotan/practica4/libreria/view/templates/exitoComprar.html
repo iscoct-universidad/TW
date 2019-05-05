@@ -1,0 +1,21 @@
+{% extends "./view/templates/base.html" %}
+{% block main %}
+	<main class="borde colorFondo">
+		<p>Estos son todos los datos en relación con la compra</p>
+		<h2>Información del libro</h2>
+		<p>Título: {{ libro.titulo }}</p>
+		<p>Nombre del autor: {{ libro.nombreAutor }}</p>
+		<p>Editorial: {{ libro.editorial }}</p>
+		<p>Precio: {{ libro.precio }}</p>
+		<p>ISBN: {{ libro.isbn }}</p>
+		<p>Portada <img src="{{ libro.rutaImagen }}" alt="Portada de {{ libro.titulo }}"></p>
+		
+		<h2>Información del comprador</h2>
+		<p>Nombre y apellidos: {{ comprador.nombreApellidos }}</p>
+		<p>Dirección de envío: {{ comprador.direccionEnvio }}</p>
+		<p>Email: {{ comprador.email }}</p>
+		<p>Número de tarjeta: {{ comprador.numTarjeta }}</p>
+		<p>Fecha de caducidad: {{ comprador.fechaCaducidad }}</p>
+		<p>CVC: {{ comprador.cvc }}</p>
+	</main>
+{% endblock %}

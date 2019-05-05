@@ -1,0 +1,68 @@
+{% extends "./view/templates/base.html" %}
+
+{% block css %}
+	<link rel="stylesheet" href="./view/templates/css/catalogo.css">
+{% endblock %}
+
+{% block main %}
+	<main class="borde colorFondo" id="conjuntoEventos">
+
+    <!-- Lista de libros -->
+
+    <ul id="catalogo">
+        <!-- Libro número 1 -->
+
+		{% for libro in libros %}
+			<li>
+				<div class="listCatalogo" id="{{libro.isbn}}">
+					<img src="{{ libro.rutaImagen }}" alt="{{ libro.titulo }}" width="200" height="200"/>
+					<h2 class="titulo">{{ libro.titulo }}</h2>
+					<p class="autor">{{ libro.autor }}</p>
+					<p class="precio">{{ libro.precio }}</p>
+					<button type="button" 
+						onclick='window.open("/comprar.php?isbn={{libro.isbn}}");'>Comprar</button>
+					
+					{% if usuarioRegistrado %}
+						<button type="button" onclick="window.open('localhost:8080/editarLibro.php');">Editar</button>
+						<button type="button" onclick="eliminarLibro({{libro.isbn}});">Eliminar</button>
+					{% endif %}
+				</div>
+			</li> 
+		{% endfor %}
+
+    </ul>
+
+</main>
+{% endblock %}
+
+{% block javascript %}
+	<script type="text/javascript">
+		function editarLibro(isbn) {
+			console.log("Operación editarLibro, isbn: " + isbn);
+		}
+		
+		function eliminarLibro(isbn) {
+			console.log("Operación eliminarLibro, isbn: " + isbn);
+			
+			let data = new FormData();
+			
+			data.append('isbn', isbn);
+			
+			let header = {
+				method: 'POST',
+				body: data,
+				mode: 'cors'
+			};
+			
+			fetch('http://localhost:8080/eliminarLibro.php', header).then((res) => {
+				return res.text();
+			}).then((text) => {
+				console.log(`Texto: ${text}`);
+				
+				location.reload();
+			}).catch((err) => {
+				console.log("Hubo un error");
+			});
+		}
+	</script>
+{% endblock %}

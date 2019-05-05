@@ -1,0 +1,55 @@
+{% extends "./view/templates/base.html" %}
+{% block css %}
+	<link rel="stylesheet" href="./view/templates/css/tienda.css">
+{% endblock %}
+{% block main %}
+	<main class="borde colorFondo" id="conjuntoTiendas">
+		<table id="tablaTiendas">
+		    <thead>
+		        <tr>
+		            <th>
+		                Ciudad
+		            </th>
+		            <th>
+		                Tienda
+		            </th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td class="ciudad" rowspan="2">
+		                Granada
+		            </td>
+		            <td>
+		                <ul>
+		                    <li> <img src="./view/templates/img/tiendas/granada.jpg" alt="Granada" height="300" width="300"/> </li>
+		                    <li> Código postal: 18015 </li>
+		                    <li> Número de teléfono: 123456789 </li>
+		                </ul>
+		            </td>
+		        </tr>
+		        <tr>
+		            <td>
+		                <ul>
+		                    <li> <img src="./view/templates/img/tiendas/granada2.jpg" alta="Granada 2" height="300" width="300"/> </li>
+		                    <li> Código postal: 18016 </li>
+		                    <li> Número de teléfono: 987654321 </li>
+		                </ul>
+		            </td>
+		        </tr>
+		        <tr>
+		            <td class="ciudad">
+		                Jerez de la Frontera
+		            </td>
+		            <td>
+		                <ul>
+		                    <li><img src="./view/templates/img/tiendas/jerez.jpg" alt="Jerez de la Frontera" height="300" width="300"/></li>
+		                    <li> Código postal: 18016</li>
+		                    <li> Número de teléfono: 987654321</li>
+		                </ul>
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+	</main>
+{% endblock %}

@@ -1,0 +1,42 @@
+#pie {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#contacto ul {
+    list-style-type: none;
+}
+
+#redesSociales ul {
+    list-style-type: none;
+}
+
+.navImagenes {
+    float: left;
+    width: 50%;
+}
+
+#navPie ul {
+    list-style-type: none;
+}
+
+.ciudad {
+	font-weight: bold;
+}
+
+.ubicacion {
+	font-weight: normal;
+}
+
+.enlacePie {
+	text-decoration: none;
+    color: black;
+}
+
+.enlacePie:hover {
+    font-weight: bold;
+}
+
+.enlacePie:visited {
+	color: white;
+}

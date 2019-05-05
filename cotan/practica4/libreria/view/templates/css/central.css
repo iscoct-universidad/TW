@@ -1,0 +1,14 @@
+#bloqueCentral {
+	margin-top: 1%;
+	margin-bottom: 1%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+#lateral {
+	margin-left: 2%;
+}
+
+.lateral {
+	margin-left: 3%;
+}
