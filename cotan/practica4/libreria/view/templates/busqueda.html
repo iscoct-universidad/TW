@@ -4,25 +4,15 @@
 {% endblock %}
 {% block main %}
 	<main class="borde colorFondo" id="conjuntoEventos">
-        <form action="./procesar.php">
-            <fieldset>
-                Autor <input type="text" name="autor"/><br/>
-                Título <input type="text" name="titulo"/><br/>
-                ISBN <input type="text" name="isbn"/><br/>
-                Precio  entre <input type="text" name="precioMinimo"/>  y <input type="text" name="precioMaximo"/><br/>
-                Género  <select id="genero" name="genero">
-                    <option value="" disabled selected>- Elija el género -</option>
-                    <option value="accion">Acción</option>
-                    <option value="cienciaFiccion">Ciencia Ficción</option>
-                    <option value="thriller">Thriller</option>
-                    <option value="comedia">Comedia</option>
-                    <option value="autoayuda">Autoayuda</option>
-                </select><br/>
-                Encuadernación  <label for="dura"><input type="radio" name="encuadernacion" value="dura">Tapa dura</label>
-                                <label for="blanda"><input type="radio" name="encuadernacion" value="blanda">Tapa blanda</label>
-                                <label for="cualquiera"><input type="radio" name="encuadernacion" value="cualquiera" checked>Cualquiera</label>
-                                <input type="submit" value="Buscar"/>
-            </fieldset>
+        <form action="./busqueda.php" method="post">
+            Palabra de búsqueda <input type="text" name="palabraBusqueda"/>
+            Género 
+            	<select name="genero">
+            		{% for genero in generos %}
+            			<option value="{{genero}}">{{genero}}</option>
+            		{% endfor %}
+            	</select>
+            <input type="submit" value="Enviar"/>
         </form>
     </main>
 {% endblock %}
