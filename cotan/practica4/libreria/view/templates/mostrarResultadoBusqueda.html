@@ -1,0 +1,14 @@
+{% extends "./view/templates/base.html" %}
+{% block main %}
+	<main class="borde colorFondo">
+		<ul>
+			{% for libro in coincidencias %}
+				<li>
+					<p>{{ libro.titulo }}</p>
+					<p>{{ libro.nombreAutor }}</p>
+					<p>{{ libro.genero }}</p>
+				</li>
+			{% endfor %}
+		</ul>
+	</main>
+{% endblock %}
